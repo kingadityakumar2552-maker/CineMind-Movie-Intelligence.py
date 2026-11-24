@@ -122,6 +122,16 @@ def recommend_collaborative(user_id, number=10):
     return movies[movies["movieId"].isin(top_ids)]
 
 # Website Header
+st.markdown("""
+<div style="text-align:center; padding:25px;">
+    <h2 style="color:#38BDF8;">
+        Developed by Aditya Kumar
+    </h2>
+    <p style="color:#94A3B8;">
+        BCA (Artificial Intelligence and Machine Learning)
+    </p>
+</div>
+""", unsafe_allow_html=True)
 st.title("🎬 CineMind")
 st.subheader("Your Personal Movie Intelligence")
 st.write("Discover movies based on your taste and preferences.")
